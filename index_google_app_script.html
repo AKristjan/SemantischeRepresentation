@@ -30,12 +30,47 @@
   
   </head>
   
-  
   <body>
+      
+        <!-- Metadaten Array -->
 
       
-          
-    <!-- Block der mittels den oben aufgeruften Methoden befüllt wird -->
+        <? 
+        var metadataItems =[
+            ["Dokumenttyp","doctyoe"],
+            ["Version","version"],  
+        ] 
+        ?>      
+       
+      
+      <? var metadata = PropertiesService.getDocumentProperties() ?>
+      <script>
+          function onSave() {google.script.host.close()}
+      </script>
+      
+      
+      
+    <!-- Input Funktion -->
+
+         
+    <div>
+        <input
+        type="button"
+        value="Speichern & schließen"
+        onclick=""
+        />
+   
+        <input
+        type="button"
+        value="Schließen"
+        onclick=""
+        />
+    </div>
+      
+      
+      
+    
+    <!-- "Statische-Attribute Block", der mittels den oben aufgeruften Methoden befüllt wird -->
     <div>
     <h3> Statische Attribute </h3> 
        <div id="output0"></div>
@@ -48,8 +83,14 @@
        <div id="output7"></div>
     </div>
     
+     
       
-      <base target="_top">
+      
+      
+      
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <base target="_top">
     <script>
         
         
