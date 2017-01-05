@@ -14,3 +14,11 @@ function showSidebar() {
       .setTitle('Attributierung von Dokumenten');
   DocumentApp.getUi().showSidebar(ui);
 }
+
+
+// get DokumentenName
+function getFileName() { 
+             
+            return DocumentApp.getActiveDocument().getName();
+   
+}

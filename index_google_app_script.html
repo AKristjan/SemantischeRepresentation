@@ -4,8 +4,7 @@
   <head>
  
  
- 
- 
+  
   
   </head>
   
@@ -17,8 +16,20 @@
     
     <h3> Statische Attribute </h3> 
      
-       
-    </div>
+              <div id="wrap"></div>
+
+    </div>   <base target="_top">
+    <script>
+        
+        
+         function showDocumentFileName(fileName) {
+        var div = document.getElementById('wrap');
+        div.innerHTML = 'Dokumentenname: ' + fileName  ;
+      }
+        google.script.run.withSuccessHandler(showDocumentFileName).getFileName();
+
+        
+    </script>
     
     
  
