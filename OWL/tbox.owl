@@ -1,83 +1,161 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#"
-     xml:base="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#gehoertZuProjekt -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#gehoertZuProjekt"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Dokument -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Dokument"/>
-    
-
-
-    <!-- http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#IT-Projekt -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#IT-Projekt">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Projekt"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Lastenheft -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Lastenheft">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Dokument"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Person -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Person"/>
-    
-
-
-    <!-- http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Pflichtenheft -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Pflichtenheft">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Dokument"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Projekt -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2017/0/untitled-ontology-30#Projekt"/>
-</rdf:RDF>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud">
+    <Prefix name="" IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Vertrieb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Land"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IT_Projekt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pflichtenheft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Projekt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extern_Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bundesland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forschung_&amp;_Entwicklung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marketing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Einkauf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buchhaltung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lastenheft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intern_Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marketingprojekt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meilenstein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unternehmen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Abteilung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dokument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produktion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risikoanalyse"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Buchhaltung"/>
+        <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Einkauf"/>
+        <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extern_Mitarbeiter"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IT"/>
+        <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IT_Projekt"/>
+        <Class IRI="#Projekt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intern_Mitarbeiter"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lastenheft"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marketing"/>
+        <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marketingprojekt"/>
+        <Class IRI="#Projekt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meilenstein"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectUnionOf>
+            <Class IRI="#Extern_Mitarbeiter"/>
+            <Class IRI="#Intern_Mitarbeiter"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal"/>
+        <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pflichtenheft"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produktion"/>
+        <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risikoanalyse"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vertrieb"/>
+        <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forschung_&amp;_Entwicklung"/>
+        <Class IRI="#Projekt"/>
+    </SubClassOf>
+</Ontology>
 
 
 
