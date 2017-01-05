@@ -1,28 +1,22 @@
-
-function metadataView() {
-  html= HtmlService
-      .createTemplateFromFile('metadata')
-      .evaluate()
-      .setSandboxMode(HtmlService.SandboxMode.IFRAME);
-  
-  DocumentApp.getUi().showSidebar(html);
+function onOpen(e) {
+  DocumentApp.getUi().createAddonMenu()
+      .addItem('Start', 'showSidebar')
+      .addToUi();
+}
+ 
+function onInstall(e) {
+  onOpen(e);
 }
 
-
+ 
 function showSidebar() {
-  var ui = HtmlService.createHtmlOutputFromFile('metadata')
+  var ui = HtmlService.createHtmlOutputFromFile('Sidebar')
       .setTitle('Attributierung von Dokumenten');
   DocumentApp.getUi().showSidebar(ui);
+//  showStaticAttributes(DocumentApp.getActiveDocument().getId());
+  
 }
-
-
-function doGet() {
-  return HtmlService.createHtmlOutputFromFile('Index');
-}
-
-function getUnreadEmails() {
-  return GmailApp.getInboxUnreadCount();
-}
+ 
 
 
 function getFileName() { 
@@ -31,6 +25,24 @@ function getFileName() {
   return fileName;
 }
 
+
+function getDateCreated() {
+ var files = DriveApp.getFilesByName(PropertiesService.getScriptProperties().getProperty('fileName'));
+ while (files.hasNext()) {
+   var file = files.next();
+   var creationDate = file.getDateCreated();
+   PropertiesService.getScriptProperties().setProperty('creationDate', creationDate);
+   return ""+creationDate;
+ }
+}
+
+function getLastUpdated() {
+ var files = DriveApp.getFilesByName(PropertiesService.getScriptProperties().getProperty('fileName'));
+ while (files.hasNext()) {
+   var file = files.next();
+   return ""+file.getLastUpdated();
+ }
+  
 
 function getViewer() {
   var viewerString = DocumentApp.getActiveDocument().getViewers().toString();
@@ -55,4 +67,6 @@ function getID() {
   PropertiesService.getScriptProperties().setProperty('driveDocumentID', driveDocumentID);
   return driveDocumentID;
 }
+
+
 
