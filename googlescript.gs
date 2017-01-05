@@ -16,9 +16,19 @@ function showSidebar() {
 }
 
 
-// get DokumentenName
+// Getter Statische Metadaten
 function getFileName() { 
              
             return DocumentApp.getActiveDocument().getName();
    
 }
+
+function getURL() {
+  return DocumentApp.getActiveDocument().getUrl();    
+}
+
+function getID() {
+  return DocumentApp.getActiveDocument().getId();
+}
+
+
