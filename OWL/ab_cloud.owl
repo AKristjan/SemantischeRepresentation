@@ -1,19 +1,378 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#"
-     xml:base="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#"/>
-    
-       <owl:Ontology rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud">
-        <owl:imports rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"/>
-    </owl:Ontology>
-    
-</rdf:RDF>
+Prefix(:=<http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud>
+Import(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud>)
+
+Declaration(Class(:Mitarbeiter))
+Declaration(NamedIndividual(:Abteilung_Anwendungsentwicklung_BrokenBits))
+Declaration(NamedIndividual(:Abteilung_Buchhaltung_BrokenBits))
+Declaration(NamedIndividual(:Abteilung_Buchhaltung_Daimler_AG))
+Declaration(NamedIndividual(:Abteilung_Buchhaltung_StarCars))
+Declaration(NamedIndividual(:Abteilung_Einkauf_BrokenBits))
+Declaration(NamedIndividual(:Abteilung_Einkauf_Daimler_AG))
+Declaration(NamedIndividual(:Abteilung_Einkauf_StarCar))
+Declaration(NamedIndividual(:Abteilung_Human_Ressource_Daimler_AG))
+Declaration(NamedIndividual(:Abteilung_IT_BrokenBits))
+Declaration(NamedIndividual(:Abteilung_IT_Daimler_AG))
+Declaration(NamedIndividual(:Abteilung_IT_StarCar))
+Declaration(NamedIndividual(:Abteilung_Marketing_Daimler_AG))
+Declaration(NamedIndividual(:Abteilung_Marketing_StarCars))
+Declaration(NamedIndividual(:Abteilung_Personal_StarCar))
+Declaration(NamedIndividual(:Abteilung_Produktion_Daimler))
+Declaration(NamedIndividual(:Abteilung_Produktion_StarCar))
+Declaration(NamedIndividual(:Andy_Yeng))
+Declaration(NamedIndividual(:Aomori))
+Declaration(NamedIndividual(:BadenWuerttemberg))
+Declaration(NamedIndividual(:Bayern))
+Declaration(NamedIndividual(:BeispielUnternehmen))
+Declaration(NamedIndividual(:Berlin))
+Declaration(NamedIndividual(:Bosch_GmbH))
+Declaration(NamedIndividual(:Brandenburg))
+Declaration(NamedIndividual(:Bremen))
+Declaration(NamedIndividual(:BrokenBits))
+Declaration(NamedIndividual(:Daimler_AG))
+Declaration(NamedIndividual(:Deutschland))
+Declaration(NamedIndividual(:EcoLogics))
+Declaration(NamedIndividual(:GetOne))
+Declaration(NamedIndividual(:Hamburg))
+Declaration(NamedIndividual(:Hans_Beispiel))
+Declaration(NamedIndividual(:Haruki_Murakami))
+Declaration(NamedIndividual(:Hessen))
+Declaration(NamedIndividual(:HighNet))
+Declaration(NamedIndividual(:Japan))
+Declaration(NamedIndividual(:Josh_Harumi))
+Declaration(NamedIndividual(:Kiel))
+Declaration(NamedIndividual(:Mainz))
+Declaration(NamedIndividual(:MecklenburgVorpommern))
+Declaration(NamedIndividual(:Niedersachsen))
+Declaration(NamedIndividual(:NordrheinWesfalen))
+Declaration(NamedIndividual(:Projektleiter))
+Declaration(NamedIndividual(:Projektmitarbeiter))
+Declaration(NamedIndividual(:RheinlandPfalz))
+Declaration(NamedIndividual(:Rudolf_Eckstein))
+Declaration(NamedIndividual(:Saarland))
+Declaration(NamedIndividual(:SachsenAnhalt))
+Declaration(NamedIndividual(:SchleswigHolstein))
+Declaration(NamedIndividual(:Sigi_Sauerstoff))
+Declaration(NamedIndividual(:Simone_Temperamentos))
+Declaration(NamedIndividual(:StarCars_AG))
+Declaration(NamedIndividual(:Stuttgart))
+Declaration(NamedIndividual(:Thueringen))
+Declaration(NamedIndividual(:Tokio))
+Declaration(NamedIndividual(:Vee_Curtomacii))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land>)
+
+# Object Property: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt>)
+
+# Object Property: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor>)
+
+InverseFunctionalObjectProperty(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor>)
+
+# Object Property: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung>)
+
+# Object Property: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle>)
+
+InverseFunctionalObjectProperty(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle>)
 
 
 
- 
+
+############################
+#   Classes
+############################
+
+# Class: :Mitarbeiter (:Mitarbeiter)
+
+SubClassOf(:Mitarbeiter <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person>)
+SubClassOf(:Mitarbeiter ObjectSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_ist_Projektmitglied_von> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt>))
+SubClassOf(:Mitarbeiter ObjectExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung>))
+SubClassOf(:Mitarbeiter ObjectExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle>))
+
+# Class: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland>)
+
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> ObjectExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land>))
+
+# Class: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument>)
+
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> ObjectExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt>))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> ObjectExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person>))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> DataSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#AenderungsDatum> xsd:dateTime))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> DataSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ErstellungsDatum> xsd:dateTime))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> DataExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentName> xsd:string))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> DataExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentTyp> xsd:string))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> DataExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveID> xsd:string))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument> DataExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveUrl> xsd:string))
+
+# Class: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person>)
+
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person> ObjectSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor_hat_Dokument_verfasst> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument>))
+
+# Class: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt>)
+
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt> ObjectSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Abteilung> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung>))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt> ObjectSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Projektmitglied> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person>))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt> ObjectExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Unternehmen> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person>))
+
+# Class: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt>)
+
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt> ObjectExactCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_hat_Stadt> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt>))
+
+# Class: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> (<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen>)
+
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> ObjectSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Abteilung> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung>))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> ObjectSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Mitarbeiter> :Mitarbeiter))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> ObjectSomeValuesFrom(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Projekt> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt>))
+SubClassOf(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> ObjectMinCardinality(1 <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_ist_in_der_Stadt> <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Abteilung_Anwendungsentwicklung_BrokenBits (:Abteilung_Anwendungsentwicklung_BrokenBits)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion> :Abteilung_Anwendungsentwicklung_BrokenBits)
+
+# Individual: :Abteilung_Buchhaltung_BrokenBits (:Abteilung_Buchhaltung_BrokenBits)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung> :Abteilung_Buchhaltung_BrokenBits)
+
+# Individual: :Abteilung_Buchhaltung_Daimler_AG (:Abteilung_Buchhaltung_Daimler_AG)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung> :Abteilung_Buchhaltung_Daimler_AG)
+
+# Individual: :Abteilung_Buchhaltung_StarCars (:Abteilung_Buchhaltung_StarCars)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung> :Abteilung_Buchhaltung_StarCars)
+
+# Individual: :Abteilung_Einkauf_BrokenBits (:Abteilung_Einkauf_BrokenBits)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf> :Abteilung_Einkauf_BrokenBits)
+
+# Individual: :Abteilung_Einkauf_Daimler_AG (:Abteilung_Einkauf_Daimler_AG)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf> :Abteilung_Einkauf_Daimler_AG)
+
+# Individual: :Abteilung_Einkauf_StarCar (:Abteilung_Einkauf_StarCar)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf> :Abteilung_Einkauf_StarCar)
+
+# Individual: :Abteilung_Human_Ressource_Daimler_AG (:Abteilung_Human_Ressource_Daimler_AG)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal> :Abteilung_Human_Ressource_Daimler_AG)
+
+# Individual: :Abteilung_IT_BrokenBits (:Abteilung_IT_BrokenBits)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT> :Abteilung_IT_BrokenBits)
+
+# Individual: :Abteilung_IT_Daimler_AG (:Abteilung_IT_Daimler_AG)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT> :Abteilung_IT_Daimler_AG)
+
+# Individual: :Abteilung_IT_StarCar (:Abteilung_IT_StarCar)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT> :Abteilung_IT_StarCar)
+
+# Individual: :Abteilung_Marketing_Daimler_AG (:Abteilung_Marketing_Daimler_AG)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing> :Abteilung_Marketing_Daimler_AG)
+
+# Individual: :Abteilung_Marketing_StarCars (:Abteilung_Marketing_StarCars)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing> :Abteilung_Marketing_StarCars)
+
+# Individual: :Abteilung_Personal_StarCar (:Abteilung_Personal_StarCar)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal> :Abteilung_Personal_StarCar)
+
+# Individual: :Abteilung_Produktion_Daimler (:Abteilung_Produktion_Daimler)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion> :Abteilung_Produktion_Daimler)
+
+# Individual: :Abteilung_Produktion_StarCar (:Abteilung_Produktion_StarCar)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion> :Abteilung_Produktion_StarCar)
+
+# Individual: :Andy_Yeng (:Andy_Yeng)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter> :Andy_Yeng)
+
+# Individual: :Aomori (:Aomori)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Aomori)
+
+# Individual: :BadenWuerttemberg (:BadenWuerttemberg)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :BadenWuerttemberg)
+
+# Individual: :Bayern (:Bayern)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Bayern)
+
+# Individual: :BeispielUnternehmen (:BeispielUnternehmen)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> :BeispielUnternehmen)
+
+# Individual: :Berlin (:Berlin)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Berlin)
+
+# Individual: :Brandenburg (:Brandenburg)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Brandenburg)
+
+# Individual: :Bremen (:Bremen)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Bremen)
+
+# Individual: :BrokenBits (:BrokenBits)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> :BrokenBits)
+
+# Individual: :Daimler_AG (:Daimler_AG)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> :Daimler_AG)
+
+# Individual: :Deutschland (:Deutschland)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land> :Deutschland)
+
+# Individual: :EcoLogics (:EcoLogics)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt> :EcoLogics)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein> :EcoLogics)
+
+# Individual: :GetOne (:GetOne)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abschlussbericht> :GetOne)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Fachliches_Konzept> :GetOne)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt> :GetOne)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein> :GetOne)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse> :GetOne)
+
+# Individual: :Hamburg (:Hamburg)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Hamburg)
+
+# Individual: :Hans_Beispiel (:Hans_Beispiel)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter> :Hans_Beispiel)
+
+# Individual: :Haruki_Murakami (:Haruki_Murakami)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter> :Haruki_Murakami)
+
+# Individual: :Hessen (:Hessen)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Hessen)
+
+# Individual: :HighNet (:HighNet)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt> :HighNet)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein> :HighNet)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Pflichtenheft> :HighNet)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse> :HighNet)
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Taskliste> :HighNet)
+
+# Individual: :Japan (:Japan)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land> :Japan)
+
+# Individual: :Josh_Harumi (:Josh_Harumi)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter> :Josh_Harumi)
+
+# Individual: :Kiel (:Kiel)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt> :Kiel)
+
+# Individual: :Mainz (:Mainz)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt> :Mainz)
+
+# Individual: :MecklenburgVorpommern (:MecklenburgVorpommern)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :MecklenburgVorpommern)
+
+# Individual: :Niedersachsen (:Niedersachsen)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Niedersachsen)
+
+# Individual: :NordrheinWesfalen (:NordrheinWesfalen)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :NordrheinWesfalen)
+
+# Individual: :Projektleiter (:Projektleiter)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle> :Projektleiter)
+
+# Individual: :Projektmitarbeiter (:Projektmitarbeiter)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle> :Projektmitarbeiter)
+
+# Individual: :RheinlandPfalz (:RheinlandPfalz)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :RheinlandPfalz)
+
+# Individual: :Rudolf_Eckstein (:Rudolf_Eckstein)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter> :Rudolf_Eckstein)
+
+# Individual: :Saarland (:Saarland)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Saarland)
+
+# Individual: :SachsenAnhalt (:SachsenAnhalt)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :SachsenAnhalt)
+
+# Individual: :SchleswigHolstein (:SchleswigHolstein)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :SchleswigHolstein)
+
+# Individual: :Sigi_Sauerstoff (:Sigi_Sauerstoff)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter> :Sigi_Sauerstoff)
+
+# Individual: :Simone_Temperamentos (:Simone_Temperamentos)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter> :Simone_Temperamentos)
+
+# Individual: :StarCars_AG (:StarCars_AG)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen> :StarCars_AG)
+
+# Individual: :Stuttgart (:Stuttgart)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt> :Stuttgart)
+
+# Individual: :Thueringen (:Thueringen)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland> :Thueringen)
+
+# Individual: :Tokio (:Tokio)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt> :Tokio)
+
+# Individual: :Vee_Curtomacii (:Vee_Curtomacii)
+
+ClassAssertion(<http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter> :Vee_Curtomacii)
+
+
+)
