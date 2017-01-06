@@ -1,612 +1,978 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud"
      xml:base="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud"
+     xmlns:ab_cloud="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud">
-    <Prefix name="" IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud</Import>
-    <Declaration>
-        <NamedIndividual IRI="#SchleswigHolstein"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Simone_Temperamentos"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Bremen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tokio"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Thueringen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Hans_Beispiel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BeispielUnternehmen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Niedersachsen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Saarland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Berlin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Human_Ressource_Daimler_AG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Marketing_Daimler_AG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Andy_Yeng"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#NordrheinWesfalen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Vee_Curtomacii"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Einkauf_Daimler_AG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Hamburg"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Buchhaltung_Daimler_AG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_IT_Daimler_AG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Rudolf_Eckstein"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Buchhaltung_StarCars"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Bosch_GmbH"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Anwendungsentwicklung_BrokenBits"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Bayern"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HighNet"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Stuttgart"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Projektmitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Japan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GetOne"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Haruki_Murakami"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Mainz"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Projektleiter"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MecklenburgVorpommern"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Brandenburg"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BrokenBits"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#EcoLogics"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Deutschland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SachsenAnhalt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_IT_StarCar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Buchhaltung_BrokenBits"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BadenWuerttemberg"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Josh_Harumi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Einkauf_StarCar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Daimler_AG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Personal_StarCar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Aomori"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Kiel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Marketing_StarCars"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_IT_BrokenBits"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Produktion_Daimler"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Einkauf_BrokenBits"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Abteilung_Produktion_StarCar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#StarCars_AG"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Hessen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#RheinlandPfalz"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Sigi_Sauerstoff"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#Mitarbeiter"/>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mitarbeiter"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_ist_Projektmitglied_von"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mitarbeiter"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mitarbeiter"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#AenderungsDatum"/>
-            <Datatype abbreviatedIRI="xsd:dateTime"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ErstellungsDatum"/>
-            <Datatype abbreviatedIRI="xsd:dateTime"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentName"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentTyp"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveID"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveUrl"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor_hat_Dokument_verfasst"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Abteilung"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Projektmitglied"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Unternehmen"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_hat_Stadt"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Abteilung"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Mitarbeiter"/>
-            <Class IRI="#Mitarbeiter"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Projekt"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_ist_in_der_Stadt"/>
-            <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
-        <NamedIndividual IRI="#Abteilung_Anwendungsentwicklung_BrokenBits"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
-        <NamedIndividual IRI="#Abteilung_Buchhaltung_BrokenBits"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
-        <NamedIndividual IRI="#Abteilung_Buchhaltung_Daimler_AG"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
-        <NamedIndividual IRI="#Abteilung_Buchhaltung_StarCars"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
-        <NamedIndividual IRI="#Abteilung_Einkauf_BrokenBits"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
-        <NamedIndividual IRI="#Abteilung_Einkauf_Daimler_AG"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
-        <NamedIndividual IRI="#Abteilung_Einkauf_StarCar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal"/>
-        <NamedIndividual IRI="#Abteilung_Human_Ressource_Daimler_AG"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
-        <NamedIndividual IRI="#Abteilung_IT_BrokenBits"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
-        <NamedIndividual IRI="#Abteilung_IT_Daimler_AG"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
-        <NamedIndividual IRI="#Abteilung_IT_StarCar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing"/>
-        <NamedIndividual IRI="#Abteilung_Marketing_Daimler_AG"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing"/>
-        <NamedIndividual IRI="#Abteilung_Marketing_StarCars"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal"/>
-        <NamedIndividual IRI="#Abteilung_Personal_StarCar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
-        <NamedIndividual IRI="#Abteilung_Produktion_Daimler"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
-        <NamedIndividual IRI="#Abteilung_Produktion_StarCar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Andy_Yeng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Aomori"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#BadenWuerttemberg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Bayern"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <NamedIndividual IRI="#BeispielUnternehmen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Berlin"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Brandenburg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Bremen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <NamedIndividual IRI="#BrokenBits"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <NamedIndividual IRI="#Daimler_AG"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
-        <NamedIndividual IRI="#Deutschland"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt"/>
-        <NamedIndividual IRI="#EcoLogics"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein"/>
-        <NamedIndividual IRI="#EcoLogics"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abschlussbericht"/>
-        <NamedIndividual IRI="#GetOne"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Fachliches_Konzept"/>
-        <NamedIndividual IRI="#GetOne"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt"/>
-        <NamedIndividual IRI="#GetOne"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein"/>
-        <NamedIndividual IRI="#GetOne"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse"/>
-        <NamedIndividual IRI="#GetOne"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Hamburg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Hans_Beispiel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Haruki_Murakami"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Hessen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt"/>
-        <NamedIndividual IRI="#HighNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein"/>
-        <NamedIndividual IRI="#HighNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Pflichtenheft"/>
-        <NamedIndividual IRI="#HighNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse"/>
-        <NamedIndividual IRI="#HighNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Taskliste"/>
-        <NamedIndividual IRI="#HighNet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
-        <NamedIndividual IRI="#Japan"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Josh_Harumi"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
-        <NamedIndividual IRI="#Kiel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
-        <NamedIndividual IRI="#Mainz"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#MecklenburgVorpommern"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Niedersachsen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#NordrheinWesfalen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle"/>
-        <NamedIndividual IRI="#Projektleiter"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle"/>
-        <NamedIndividual IRI="#Projektmitarbeiter"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#RheinlandPfalz"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Rudolf_Eckstein"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Saarland"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#SachsenAnhalt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#SchleswigHolstein"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Sigi_Sauerstoff"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Simone_Temperamentos"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
-        <NamedIndividual IRI="#StarCars_AG"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
-        <NamedIndividual IRI="#Stuttgart"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
-        <NamedIndividual IRI="#Thueringen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
-        <NamedIndividual IRI="#Tokio"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter"/>
-        <NamedIndividual IRI="#Vee_Curtomacii"/>
-    </ClassAssertion>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung"/>
-    </FunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle"/>
-    </InverseFunctionalObjectProperty>
-</Ontology>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud">
+        <owl:imports rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_gehoert_zu_Projekt -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_gehoert_zu_Projekt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#AenderungsDatum -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#AenderungsDatum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Autor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Autor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Autor_von_Dokument -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Autor_von_Dokument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bundesland_gehoert_zu_Land -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bundesland_gehoert_zu_Land"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Dokument -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Dokument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DokumentTyp -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DokumentTyp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DriveID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DriveID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#ErstellugsDatum -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#ErstellugsDatum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_gehoert_zu_Abteilung -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_gehoert_zu_Abteilung"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_hat_Projektrolle -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_hat_Projektrolle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_von_Unternehmen -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_von_Unternehmen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Stadt_gehoert_zu_Bundesland -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Stadt_gehoert_zu_Bundesland"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Status"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#URL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#URL"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Unternehmen_hat_Abteilung -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Unternehmen_hat_Abteilung"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Unternehmen_hat_Mitarbeiter -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Unternehmen_hat_Mitarbeiter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Unternehmen_hat_Projekt -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Unternehmen_hat_Projekt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Version -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Version"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#gehoert_zu_Projekt -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#gehoert_zu_Projekt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DocumentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DocumentID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:comment>Eindeutige ID zur Identifikation eines Dokuments</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentName -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentName">
+        <rdfs:comment>Dieses Property beihaltet den Namen eines Dokuments</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentTyp -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentTyp">
+        <rdfs:comment>Der Dokumenttyp beschreibt das Format einer Datei zum Beispiel: jpg, docx, etc.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveID -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveID">
+        <rdfs:comment>Eindeutige ID, die von Google bereitgestellt wird, zur Identifikation eines Dokuments. Die DriveDocumentID wird von Google für jede Datei, die in Google Drive abgelegt, erstellt. Im Gegensatz zu &quot;DocumentID&quot; wird diese dynamisch generiert.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveUrl -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveUrl">
+        <rdfs:comment>Eindeutige URL, der von Google bereitgestellt wird, um eine Datei oder Dokument zu öffnen</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_ist_Projektmitglied_von"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung">
+        <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für eine Abteilung eines Unternehmens
+.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#AenderungsDatum"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ErstellungsDatum"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentTyp"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveUrl"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor_hat_Dokument_verfasst"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für eine Person, wie: Autor, Kunde und Mitarbeiter.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Abteilung"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Projektmitglied"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Unternehmen"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für ein Projekt.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_hat_Stadt"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Abteilung"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Mitarbeiter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Projekt"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_ist_in_der_Stadt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für ein Unternehmen.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Anwendungsentwicklung_BrokenBits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Anwendungsentwicklung_BrokenBits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Buchhaltung_BrokenBits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Buchhaltung_BrokenBits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Buchhaltung_Daimler_AG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Buchhaltung_Daimler_AG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Buchhaltung_StarCars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Buchhaltung_StarCars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Einkauf_BrokenBits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Einkauf_BrokenBits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Einkauf_Daimler_AG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Einkauf_Daimler_AG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Einkauf_StarCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Einkauf_StarCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Human_Ressource_Daimler_AG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Human_Ressource_Daimler_AG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_IT_BrokenBits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_IT_BrokenBits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_IT_Daimler_AG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_IT_Daimler_AG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_IT_StarCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_IT_StarCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Marketing_Daimler_AG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Marketing_Daimler_AG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Marketing_StarCars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Marketing_StarCars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Personal_StarCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Personal_StarCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Produktion_Daimler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Produktion_Daimler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Produktion_StarCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Abteilung_Produktion_StarCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Andy_Yeng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Andy_Yeng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Aomori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Aomori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BadenWuerttemberg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BadenWuerttemberg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bayern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bayern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BeispielUnternehmen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BeispielUnternehmen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Berlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Berlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bosch_GmbH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bosch_GmbH"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Brandenburg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Brandenburg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bremen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Bremen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BrokenBits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BrokenBits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Daimler_AG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Daimler_AG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Deutschland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Deutschland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#EcoLogics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#EcoLogics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#GetOne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#GetOne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abschlussbericht"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Fachliches_Konzept"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hamburg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hamburg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hans_Beispiel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hans_Beispiel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hessen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hessen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#HighNet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#HighNet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Pflichtenheft"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Taskliste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Josh_Harumi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Josh_Harumi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Kiel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Kiel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mainz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mainz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#MecklenburgVorpommern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#MecklenburgVorpommern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Niedersachsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Niedersachsen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#NordrheinWesfalen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#NordrheinWesfalen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Projektleiter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Projektleiter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Projektmitarbeiter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Projektmitarbeiter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#RheinlandPfalz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#RheinlandPfalz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Rudolf_Eckstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Rudolf_Eckstein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Saarland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Saarland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#SachsenAnhalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#SachsenAnhalt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#SchleswigHolstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#SchleswigHolstein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Sigi_Sauerstoff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Sigi_Sauerstoff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Simone_Temperamentos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Simone_Temperamentos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#StarCars_AG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#StarCars_AG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Stuttgart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Stuttgart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Testdokument1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Testdokument1">
+        <ab_cloud:Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
+        <ab_cloud:DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dokument</ab_cloud:DokumentTyp>
+        <ab_cloud:ErstellugsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">01.01.2016 7:55</ab_cloud:ErstellugsDatum>
+        <ab_cloud:Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technische Realisierung</ab_cloud:Status>
+        <ab_cloud:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/document/d/1fOFkCM6wb_Ux4za45iQLlsqbVfTlceO6eTMiZZwiy70</ab_cloud:URL>
+        <ab_cloud:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ab_cloud:Version>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Thueringen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Thueringen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Tokio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Tokio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Vee_Curtomacii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Vee_Curtomacii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor">
+        <rdfs:comment>Dieses Property beihaltet den Namen des Autors</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument">
+        <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für Dokumente.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen">
+        <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für geografische Bereiche, wie: Budesland, Land und Stadt.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#GoogleDrive">
+        <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für Google Drive.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#MitarbeiterRolle">
+        <rdfs:comment>Diese Property gibt an, welche Rollenausprägung ein Mitarbeiter haben kann</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektName">
+        <rdfs:comment>Dieses Property beihaltet den Namen des Projektes</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektPhase">
+        <rdfs:comment>Dieses Property beihaltet die aktuelle Phase des Projektes</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektStatus">
+        <rdfs:comment>Dieses Property beihaltet den aktuelle Status des Projektes</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektTyp">
+        <rdfs:comment>Der Projekttyp beschreibt den Typ eines Projektes zum Beispiel:IT-Projekt, etc.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
 
 
 

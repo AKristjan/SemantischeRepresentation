@@ -1,922 +1,834 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"
      xml:base="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud">
-    <Prefix name="" IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#IT_Projekt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#IT"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ProjektName"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Stadt"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#AenderungsDatum"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#DokumentTyp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ProjektTyp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Projekttyp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Marketing"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Autor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Einkauf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Marketingprojekt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Geoinformationen"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Unternehmen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Personal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Protokoll_Meeting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Risikoanalyse"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ProjektStatus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Zielvereinbarung"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Version"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ProjektPhase"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#MitarbeiterRolle"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ErstellungsDatum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Buchhaltung"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Terminplan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lastenheft"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#DriveID"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Meilenstein"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Autor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Abteilung"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vertrieb"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Land"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Tag"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Land_hat_Bundesland"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Unternehmen_ist_in_der_Stadt"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Projekt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Extern_Mitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#DokumentName"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Projektrolle_gehoert_zu_Mitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Technisches_Konzept"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Kunden"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Riskioplanung"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Bundesland"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Abteilung"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Dokument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Produktion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ressourcenplanung"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Taskliste"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Unternehmen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kunde"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#DriveUrl"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pflichtenheft"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Dokument_hat_Autor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Projekt"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#GoogleDrive"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Übergabedokument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forschung_&amp;_Entwicklung"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bundesland"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Stadt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Abschlussbericht"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Dokument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Intern_Mitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Geoinformationen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fachliches_Konzept"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Mitarbeiter"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dokument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Land"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Projektrolle"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Projekt"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#Abschlussbericht"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Abteilung"/>
-        <Class IRI="#Unternehmen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Buchhaltung"/>
-        <Class IRI="#Abteilung"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <IRI>#Land</IRI>
-        </Annotation>
-        <Class IRI="#Bundesland"/>
-        <Class IRI="#Land"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Dokument"/>
-        <Class IRI="#Unternehmen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Einkauf"/>
-        <Class IRI="#Abteilung"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Extern_Mitarbeiter"/>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fachliches_Konzept"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#IT"/>
-        <Class IRI="#Abteilung"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#IT_Projekt"/>
-        <Class IRI="#Projekttyp"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Intern_Mitarbeiter"/>
-        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kunde"/>
-        <Class IRI="#Person"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Land"/>
-        <Class IRI="#Geoinformationen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lastenheft"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Marketing"/>
-        <Class IRI="#Abteilung"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Marketingprojekt"/>
-        <Class IRI="#Projekttyp"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Meilenstein"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Person"/>
-        <ObjectUnionOf>
-            <Class IRI="#Extern_Mitarbeiter"/>
-            <Class IRI="#Intern_Mitarbeiter"/>
-        </ObjectUnionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Personal"/>
-        <Class IRI="#Abteilung"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pflichtenheft"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Produktion"/>
-        <Class IRI="#Abteilung"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Projekt"/>
-        <Class IRI="#Unternehmen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Projektrolle"/>
-        <Class IRI="#Projekt"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Projekttyp"/>
-        <Class IRI="#Projekt"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Protokoll_Meeting"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ressourcenplanung"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Risikoanalyse"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Riskioplanung"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Stadt"/>
-        <Class IRI="#Bundesland"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Taskliste"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Technisches_Konzept"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Terminplan"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vertrieb"/>
-        <Class IRI="#Abteilung"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Zielvereinbarung"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Übergabedokument"/>
-        <Class IRI="#Dokument"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Forschung_&amp;_Entwicklung"/>
-        <Class IRI="#Projekttyp"/>
-    </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <ObjectProperty IRI="#Abteilung"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Abteilung"/>
-        <ObjectProperty IRI="#Unternehmen"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
-        <ObjectProperty IRI="#Abteilung"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
-        <ObjectProperty IRI="#Abteilung"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Autor"/>
-        <ObjectProperty IRI="#Person"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
-        <ObjectProperty IRI="#Autor"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Bundesland"/>
-        <ObjectProperty IRI="#Geoinformationen"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
-        <ObjectProperty IRI="#Bundesland"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
-        <ObjectProperty IRI="#Bundesland"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Dokument"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
-        <ObjectProperty IRI="#Dokument"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Dokument_hat_Autor"/>
-        <ObjectProperty IRI="#Dokument"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
-        <ObjectProperty IRI="#Kunden"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Kunden"/>
-        <ObjectProperty IRI="#Person"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Land"/>
-        <ObjectProperty IRI="#Geoinformationen"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Land_hat_Bundesland"/>
-        <ObjectProperty IRI="#Land"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Mitarbeiter"/>
-        <ObjectProperty IRI="#Person"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
-        <ObjectProperty IRI="#Mitarbeiter"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
-        <ObjectProperty IRI="#Mitarbeiter"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
-        <ObjectProperty IRI="#Mitarbeiter"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
-        <ObjectProperty IRI="#Projekt"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
-        <ObjectProperty IRI="#Projekt"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
-        <ObjectProperty IRI="#Projekt"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
-        <ObjectProperty IRI="#Projekt"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Projektrolle_gehoert_zu_Mitarbeiter"/>
-        <ObjectProperty IRI="#Mitarbeiter"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Stadt"/>
-        <ObjectProperty IRI="#Geoinformationen"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
-        <ObjectProperty IRI="#Stadt"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <ObjectProperty IRI="#Unternehmen"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
-        <ObjectProperty IRI="#Unternehmen"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
-        <ObjectProperty IRI="#Unternehmen"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Unternehmen_ist_in_der_Stadt"/>
-        <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
-        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
-        <ObjectProperty IRI="#Dokument_hat_Autor"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
-        <ObjectProperty IRI="#Land_hat_Bundesland"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
-        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
-        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
-        <ObjectProperty IRI="#Projektrolle_gehoert_zu_Mitarbeiter"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
-        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
-        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
-    </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Buchhaltung"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Einkauf"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#IT"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Marketing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Personal"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Produktion"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Vertrieb"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
-        <Class IRI="#Abteilung"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
-        <Class IRI="#Abteilung"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
-        <Class IRI="#Bundesland"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
-        <Class IRI="#Bundesland"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
-        <Class IRI="#Dokument"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Dokument_hat_Autor"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Kunde"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Land_hat_Bundesland"/>
-        <Class IRI="#Land"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
-        <Class IRI="#Stadt"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Unternehmen"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
-        <Class IRI="#Unternehmen"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
-        <Class IRI="#Unternehmen"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Unternehmen"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
-        <Class IRI="#Dokument"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
-        <Class IRI="#Land"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
-        <Class IRI="#Land"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Dokument_hat_Autor"/>
-        <Class IRI="#Dokument"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Unternehmen"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Land_hat_Bundesland"/>
-        <Class IRI="#Bundesland"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
-        <Class IRI="#Abteilung"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
-        <Class IRI="#Projektrolle"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
-        <Class IRI="#Abteilung"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
-        <Class IRI="#Unternehmen"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
-        <Class IRI="#Dokument"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
-        <Class IRI="#Bundesland"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Abteilung"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Buchhaltung"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Einkauf"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#IT"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Marketing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Personal"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Produktion"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
-        <Class IRI="#Vertrieb"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
-        <Class IRI="#Intern_Mitarbeiter"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
-        <Class IRI="#Projekt"/>
-    </ObjectPropertyRange>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#AenderungsDatum"/>
-        <DataProperty IRI="#Dokument"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Autor"/>
-        <DataProperty IRI="#Dokument"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Dokument"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#DokumentName"/>
-        <DataProperty IRI="#Dokument"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#DokumentTyp"/>
-        <DataProperty IRI="#Dokument"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#DriveID"/>
-        <DataProperty IRI="#GoogleDrive"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#DriveUrl"/>
-        <DataProperty IRI="#GoogleDrive"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ErstellungsDatum"/>
-        <DataProperty IRI="#Dokument"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#MitarbeiterRolle"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ProjektName"/>
-        <DataProperty IRI="#Projekt"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ProjektPhase"/>
-        <DataProperty IRI="#Projekt"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ProjektStatus"/>
-        <DataProperty IRI="#Projekt"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#ProjektTyp"/>
-        <DataProperty IRI="#Projekt"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Version"/>
-        <DataProperty IRI="#Dokument"/>
-    </SubDataPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#AenderungsDatum"/>
-        <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#DokumentName"/>
-        <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#DokumentTyp"/>
-        <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#ErstellungsDatum"/>
-        <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Tag"/>
-        <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#AenderungsDatum"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#DokumentName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#DokumentTyp"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#ErstellungsDatum"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Tag"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-</Ontology>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Abteilung"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Vertrieb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung_hat_Mitarbeiter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung_hat_Mitarbeiter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung_hat_Projekt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung_hat_Projekt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Abteilung"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor_hat_Dokument_verfasst -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor_hat_Dokument_verfasst">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_gehoert_zu_Land">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land_hat_Bundesland"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_hat_Stadt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland_hat_Stadt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt_gehoert_zu_Bundesland"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_gehoert_zu_Projekt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Dokument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument_hat_Autor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunde_gehoert_zu_Unternehmen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunde_gehoert_zu_Unternehmen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunden"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunde"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunden -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunden">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land_hat_Bundesland -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land_hat_Bundesland">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_gehoert_zu_Abteilung">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_hat_Projektrolle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle_gehoert_zu_Mitarbeiter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_ist_Projektmitglied_von -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter_ist_Projektmitglied_von">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Projektmitglied"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Abteilung -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Abteilung">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Unternehmen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_gehoert_zu_Unternehmen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Projekt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Dokument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Dokument">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Projektmitglied -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt_hat_Projektmitglied">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle_gehoert_zu_Mitarbeiter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle_gehoert_zu_Mitarbeiter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Mitarbeiter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt_gehoert_zu_Bundesland -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt_gehoert_zu_Bundesland">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Abteilung -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Abteilung">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Vertrieb"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Mitarbeiter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Mitarbeiter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Projekt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Projekt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_ist_in_der_Stadt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_ist_in_der_Stadt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen_hat_Mitarbeiter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#AenderungsDatum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#AenderungsDatum">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentTyp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DokumentTyp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#GoogleDrive"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#DriveUrl">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#GoogleDrive"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ErstellungsDatum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ErstellungsDatum">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#GoogleDrive -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#GoogleDrive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#MitarbeiterRolle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#MitarbeiterRolle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektPhase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektPhase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektTyp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#ProjektTyp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Version -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Version">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abschlussbericht -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abschlussbericht">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Buchhaltung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Einkauf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Fachliches_Konzept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Fachliches_Konzept">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#IT_Projekt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekttyp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunde -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Kunde">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Land">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Geoinformationen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Lastenheft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Lastenheft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketingprojekt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Marketingprojekt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekttyp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Meilenstein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Person">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Extern_Mitarbeiter"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Personal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Pflichtenheft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Pflichtenheft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Produktion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projektrolle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekttyp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekttyp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Protokoll_Meeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Protokoll_Meeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Ressourcenplanung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Ressourcenplanung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Risikoanalyse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Riskioplanung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Riskioplanung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Stadt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Bundesland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Taskliste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Taskliste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Technisches_Konzept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Technisches_Konzept">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Terminplan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Terminplan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Unternehmen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Vertrieb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Vertrieb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Abteilung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Zielvereinbarung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Zielvereinbarung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Übergabedokument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Übergabedokument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Forschung_&amp;_Entwicklung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Forschung_&amp;_Entwicklung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Projekttyp"/>
+    </owl:Class>
+</rdf:RDF>
 
 
 
