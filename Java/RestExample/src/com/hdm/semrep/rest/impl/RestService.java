@@ -16,7 +16,7 @@ public class RestService {
  @Path("/insert") 
  public String insertData() {
 	 
-	 // HIER: Methodenkörper
+	 // HIER: Test Methodenkörper
 	 
         return "Methode insert:  sagt Jaaaaa!"; 
  }
