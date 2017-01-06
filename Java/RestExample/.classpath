@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/$JAXB_HOME/jaxb-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/$JAXB_HOME/jaxb-core.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/$JAXB_HOME/jaxb-impl.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/$JAXB_HOME/jaxb-jxc.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/$JAXB_HOME/jaxb-xjc.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/$JERSEY_HOME/jersey-bundle-1.1.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/$JERSEY_HOME/jersey-bundle-1.17.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/mateos_alliaj/Cloud-Projekt_APIs/ASM/asm-3.3.1.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
