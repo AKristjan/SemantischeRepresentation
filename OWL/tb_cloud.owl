@@ -6,31 +6,26 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud">
+    <Prefix name="" IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Vertrieb"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Land"/>
+        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IT_Projekt"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Tag"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Stadt_hat_Bundesland"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Land_hat_Bundesland"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#IT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ProjektName"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stadt"/>
@@ -39,19 +34,22 @@
         <DataProperty IRI="#AenderungsDatum"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Unternehmen_ist_in_der_Stadt"/>
+        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#DokumentTyp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Extern_Mitarbeiter"/>
+        <DataProperty IRI="#ProjektTyp"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#DokumentName"/>
+        <Class IRI="#Projekttyp"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Marketing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Autor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Einkauf"/>
@@ -60,67 +58,61 @@
         <Class IRI="#Marketingprojekt"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Geoinformationen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Unternehmen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#Projekt_hat_Projektmanager"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Abteilung"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Personal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Produktion"/>
+        <Class IRI="#Protokoll_Meeting"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Risikoanalyse"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#DokumentURL"/>
+        <DataProperty IRI="#ProjektStatus"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Vorname"/>
+        <Class IRI="#Zielvereinbarung"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Pflichtenheft"/>
+        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Projekt"/>
+        <DataProperty IRI="#Version"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#DokumentID"/>
+        <DataProperty IRI="#ProjektPhase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Bundesland"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forschung_&amp;_Entwicklung"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Buchhaltung"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ErstellungsDatum"/>
+        <DataProperty IRI="#MitarbeiterRolle"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Projekt_hat_Mitarbeiter"/>
+        <DataProperty IRI="#ErstellungsDatum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buchhaltung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terminplan"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lastenheft"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Intern_Mitarbeiter"/>
+        <DataProperty IRI="#DriveID"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
@@ -132,14 +124,190 @@
         <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Nachname"/>
+        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Autor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Abteilung"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vertrieb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Land"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tag"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Land_hat_Bundesland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Unternehmen_ist_in_der_Stadt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Projekt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extern_Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DokumentName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Projektrolle_gehoert_zu_Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technisches_Konzept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Kunden"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riskioplanung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Bundesland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Abteilung"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Dokument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produktion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ressourcenplanung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taskliste"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Unternehmen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kunde"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DriveUrl"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pflichtenheft"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Dokument_hat_Autor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Projekt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#GoogleDrive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Übergabedokument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forschung_&amp;_Entwicklung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bundesland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Stadt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Abschlussbericht"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dokument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intern_Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Geoinformationen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fachliches_Konzept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Dokument"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Land"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Projektrolle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Projekt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Abschlussbericht"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abteilung"/>
+        <Class IRI="#Unternehmen"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Buchhaltung"/>
         <Class IRI="#Abteilung"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <IRI>#Land</IRI>
+        </Annotation>
+        <Class IRI="#Bundesland"/>
+        <Class IRI="#Land"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dokument"/>
+        <Class IRI="#Unternehmen"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Einkauf"/>
@@ -147,7 +315,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Extern_Mitarbeiter"/>
-        <Class IRI="#Person"/>
+        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fachliches_Konzept"/>
+        <Class IRI="#Dokument"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IT"/>
@@ -155,11 +327,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IT_Projekt"/>
-        <Class IRI="#Projekt"/>
+        <Class IRI="#Projekttyp"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Intern_Mitarbeiter"/>
+        <Class IRI="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kunde"/>
         <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Land"/>
+        <Class IRI="#Geoinformationen"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lastenheft"/>
@@ -171,7 +351,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Marketingprojekt"/>
-        <Class IRI="#Projekt"/>
+        <Class IRI="#Projekttyp"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Meilenstein"/>
@@ -197,7 +377,47 @@
         <Class IRI="#Abteilung"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Projekt"/>
+        <Class IRI="#Unternehmen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Projektrolle"/>
+        <Class IRI="#Projekt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Projekttyp"/>
+        <Class IRI="#Projekt"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protokoll_Meeting"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ressourcenplanung"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Risikoanalyse"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riskioplanung"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stadt"/>
+        <Class IRI="#Bundesland"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taskliste"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technisches_Konzept"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terminplan"/>
         <Class IRI="#Dokument"/>
     </SubClassOf>
     <SubClassOf>
@@ -205,35 +425,275 @@
         <Class IRI="#Abteilung"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Zielvereinbarung"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Übergabedokument"/>
+        <Class IRI="#Dokument"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Forschung_&amp;_Entwicklung"/>
-        <Class IRI="#Projekt"/>
+        <Class IRI="#Projekttyp"/>
     </SubClassOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <ObjectProperty IRI="#Abteilung"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Abteilung"/>
+        <ObjectProperty IRI="#Unternehmen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
+        <ObjectProperty IRI="#Abteilung"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
+        <ObjectProperty IRI="#Abteilung"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Autor"/>
+        <ObjectProperty IRI="#Person"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
+        <ObjectProperty IRI="#Autor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Bundesland"/>
+        <ObjectProperty IRI="#Geoinformationen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
+        <ObjectProperty IRI="#Bundesland"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
+        <ObjectProperty IRI="#Bundesland"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Dokument"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
+        <ObjectProperty IRI="#Dokument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Dokument_hat_Autor"/>
+        <ObjectProperty IRI="#Dokument"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
+        <ObjectProperty IRI="#Kunden"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Kunden"/>
+        <ObjectProperty IRI="#Person"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Land"/>
+        <ObjectProperty IRI="#Geoinformationen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Land_hat_Bundesland"/>
+        <ObjectProperty IRI="#Land"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Mitarbeiter"/>
+        <ObjectProperty IRI="#Person"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
+        <ObjectProperty IRI="#Mitarbeiter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
+        <ObjectProperty IRI="#Mitarbeiter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
+        <ObjectProperty IRI="#Mitarbeiter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
+        <ObjectProperty IRI="#Projekt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
+        <ObjectProperty IRI="#Projekt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
+        <ObjectProperty IRI="#Projekt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
+        <ObjectProperty IRI="#Projekt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Projektrolle_gehoert_zu_Mitarbeiter"/>
+        <ObjectProperty IRI="#Mitarbeiter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Stadt"/>
+        <ObjectProperty IRI="#Geoinformationen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
+        <ObjectProperty IRI="#Stadt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <ObjectProperty IRI="#Unternehmen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
+        <ObjectProperty IRI="#Unternehmen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
+        <ObjectProperty IRI="#Unternehmen"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#Unternehmen_ist_in_der_Stadt"/>
         <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
+        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
+        <ObjectProperty IRI="#Dokument_hat_Autor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
+        <ObjectProperty IRI="#Land_hat_Bundesland"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
+        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
+        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
+        <ObjectProperty IRI="#Projektrolle_gehoert_zu_Mitarbeiter"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
+        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
+        <ObjectProperty IRI="#Unternehmen_hat_Projekt"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Buchhaltung"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Einkauf"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#IT"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Marketing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Personal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Produktion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Vertrieb"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
+        <Class IRI="#Abteilung"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
+        <Class IRI="#Abteilung"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
+        <Class IRI="#Bundesland"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
         <Class IRI="#Bundesland"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
+        <Class IRI="#Dokument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Dokument_hat_Autor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Kunde"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#Land_hat_Bundesland"/>
         <Class IRI="#Land"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Projekt_hat_Mitarbeiter"/>
+        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
         <Class IRI="#Projekt"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Projekt_hat_Projektmanager"/>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
         <Class IRI="#Projekt"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Stadt_hat_Bundesland"/>
+        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
+        <Class IRI="#Projekt"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
+        <Class IRI="#Projekt"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
         <Class IRI="#Stadt"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -249,28 +709,108 @@
         <Class IRI="#Unternehmen"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/alinasiebert/ontologies/2016/0/Cloud_Dokumente#Abteilung_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Unternehmen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Abteilung_hat_Mitarbeiter"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Abteilung_hat_Projekt"/>
+        <Class IRI="#Projekt"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Autor_hat_Dokument_verfasst"/>
+        <Class IRI="#Dokument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Bundesland_gehoert_zu_Land"/>
+        <Class IRI="#Land"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#Bundesland_hat_Stadt"/>
         <Class IRI="#Land"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Dokument_gehoert_zu_Projekt"/>
+        <Class IRI="#Projekt"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Dokument_hat_Autor"/>
+        <Class IRI="#Dokument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Kunde_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Unternehmen"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Land_hat_Bundesland"/>
         <Class IRI="#Bundesland"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Projekt_hat_Mitarbeiter"/>
+        <ObjectProperty IRI="#Mitarbeiter_gehoert_zu_Abteilung"/>
+        <Class IRI="#Abteilung"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Mitarbeiter_hat_Projektrolle"/>
+        <Class IRI="#Projektrolle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Mitarbeiter_ist_Projektmitglied_von"/>
+        <Class IRI="#Projekt"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Abteilung"/>
+        <Class IRI="#Abteilung"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Projekt_gehoert_zu_Unternehmen"/>
+        <Class IRI="#Unternehmen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Projekt_hat_Dokument"/>
+        <Class IRI="#Dokument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Projekt_hat_Projektmitglied"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Projekt_hat_Projektmanager"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#Stadt_hat_Bundesland"/>
-        <Class IRI="#Land"/>
+        <ObjectProperty IRI="#Stadt_gehoert_zu_Bundesland"/>
+        <Class IRI="#Bundesland"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
         <Class IRI="#Abteilung"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <Class IRI="#Buchhaltung"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <Class IRI="#Einkauf"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <Class IRI="#IT"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <Class IRI="#Marketing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <Class IRI="#Personal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <Class IRI="#Produktion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Unternehmen_hat_Abteilung"/>
+        <Class IRI="#Vertrieb"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Unternehmen_hat_Mitarbeiter"/>
@@ -282,21 +822,65 @@
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#AenderungsDatum"/>
+        <DataProperty IRI="#Dokument"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Autor"/>
+        <DataProperty IRI="#Dokument"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Dokument"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#DokumentName"/>
+        <DataProperty IRI="#Dokument"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DokumentTyp"/>
+        <DataProperty IRI="#Dokument"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DriveID"/>
+        <DataProperty IRI="#GoogleDrive"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DriveUrl"/>
+        <DataProperty IRI="#GoogleDrive"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ErstellungsDatum"/>
+        <DataProperty IRI="#Dokument"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MitarbeiterRolle"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ProjektName"/>
+        <DataProperty IRI="#Projekt"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ProjektPhase"/>
+        <DataProperty IRI="#Projekt"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ProjektStatus"/>
+        <DataProperty IRI="#Projekt"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ProjektTyp"/>
+        <DataProperty IRI="#Projekt"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Version"/>
+        <DataProperty IRI="#Dokument"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#AenderungsDatum"/>
         <Class IRI="#Dokument"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#DokumentID"/>
-        <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#DokumentName"/>
         <Class IRI="#Dokument"/>
     </DataPropertyDomain>
@@ -305,34 +889,18 @@
         <Class IRI="#Dokument"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#DokumentURL"/>
-        <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#ErstellungsDatum"/>
         <Class IRI="#Dokument"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Nachname"/>
-        <Class IRI="#Person"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#Tag"/>
         <Class IRI="#Dokument"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Vorname"/>
-        <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#AenderungsDatum"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#DokumentID"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#DokumentName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -341,23 +909,11 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#DokumentURL"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#ErstellungsDatum"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Nachname"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#Tag"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Vorname"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
 </Ontology>
