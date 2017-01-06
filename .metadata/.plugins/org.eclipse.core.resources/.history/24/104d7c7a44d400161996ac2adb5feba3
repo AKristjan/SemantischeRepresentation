@@ -1,0 +1,33 @@
+package com.hdm.semrep.rest.impl;
+
+import javax.ws.rs.Path;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Produces;
+@Path("/rest/")
+public class Resource {
+ 
+	
+	
+	
+	
+ @GET
+ @Produces("text/plain")
+ @Path("/insert") 
+ public void insertData() {
+        return "Methode insert:  sagt Jaaaaa!"; 
+ }
+ 
+ 
+ 
+ @GET
+ @Produces("text/plain")
+ @Path("/update") 
+ public String updateData() {
+        return "Methode update: sagt Jaaaaa";
+    }
+ 
+ 
+ 
+ 
+}
