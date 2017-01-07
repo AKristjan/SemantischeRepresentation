@@ -2,6 +2,7 @@ package com.hdm.semrep.rest.impl;
 
 import javax.ws.rs.Path;
 
+import java.io.InputStream;
 import java.util.UUID;
 
 import javax.ws.rs.GET;
@@ -13,6 +14,9 @@ import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.riot.RIOT;
 import org.apache.jena.sparql.core.DatasetGraph;
 import org.apache.jena.update.UpdateExecutionFactory;
 import org.apache.jena.update.UpdateFactory;
@@ -30,6 +34,14 @@ public class RestService {
  public String addData() {
 	
 	 
+	 
+	 
+	 
+	 InputStream in =     getClass().getClassLoader().getResourceAsStream("abox.owl");
+
+
+
+	 
 		  
 	 String UPDATE_TEMPLATE = 
 	            "PREFIX dc: <http://purl.org/dc/elements/1.1/>"
@@ -39,6 +51,20 @@ public class RestService {
 	 
 	 
 	   		//Update Test
+			 try {
+					String id = UUID.randomUUID().toString();
+					System.out.println(String.format("Hinzugefügt", id));
+					UpdateProcessor updateQuery = UpdateExecutionFactory.createRemote(
+					       UpdateFactory.create(String.format(UPDATE_TEMPLATE, id)), 
+					        "http://23.236.50.250:3030/ds/update");
+						updateQuery.execute();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	 
+			 
+			 // Printer
  	        try {
  	         
  	        	
@@ -54,13 +80,7 @@ public class RestService {
 				e.printStackTrace();
 			}
 	        
- 	        	// Printer
-		    	String id = UUID.randomUUID().toString();
-				System.out.println(String.format("Hinzugefügt", id));
-				UpdateProcessor updateQuery = UpdateExecutionFactory.createRemote(
-				       UpdateFactory.create(String.format(UPDATE_TEMPLATE, id)), 
-				        "http://23.236.50.250:3030/ds/update");
-					updateQuery.execute();
+		    	
 	 
         return "Methode insert:  sagt Jaaaaa!"; 
         
