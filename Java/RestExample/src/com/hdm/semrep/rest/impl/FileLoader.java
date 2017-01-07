@@ -1,0 +1,32 @@
+package com.hdm.semrep.rest.impl;
+
+import java.io.InputStream;
+
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.util.FileManager;
+
+public class FileLoader {
+
+	public Model fileToModel(){
+		   
+		 Model model = ModelFactory.createDefaultModel();
+
+		 InputStream in = FileManager.get().open("abox.owl" );
+		 if (in == null) {
+		     throw new IllegalArgumentException(
+		                                  "File:  not found");
+		 }
+		 
+		 // read the RDF/XML file
+		 model.read(in, null);
+
+		// write it to standard out
+		model.write(System.out);
+		
+		return model;
+	
+	}
+	
+	
+}

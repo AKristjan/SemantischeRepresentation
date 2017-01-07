@@ -1,0 +1,155 @@
+package com.hdm.semrep.rest.impl;
+
+import javax.ws.rs.Path;
+
+import java.io.InputStream;
+import java.util.UUID;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Produces;
+
+import org.apache.jena.atlas.logging.LogCtl;
+import org.apache.jena.query.DatasetFactory;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.riot.RIOT;
+import org.apache.jena.sparql.core.DatasetGraph;
+import org.apache.jena.update.UpdateExecutionFactory;
+import org.apache.jena.update.UpdateFactory;
+import org.apache.jena.update.UpdateProcessor;
+import java.io.InputStream;
+
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.riot.RIOT;
+import org.apache.jena.util.FileManager;
+@Path("/restservice/")
+public class RestService {
+ 
+	
+	
+	 
+	
+ @GET
+ @Produces("text/plain")
+ @Path("/add") 
+ public String addData() {
+	 InputStream in = Utils.getResourceAsStream("data/data.ttl");
+	    RIOT.init();
+	    // creates an in-memory Jena Model
+	    Model model = ModelFactory.createDefaultModel();
+	    // parses an InputStream assuming RDF in Turtle format
+	    model.read(in, null, "TURTLE");
+	    // Write the Jena Model in Turtle, RDF/XML and N-Triples format
+	    System.out.println("\n---- Turtle ----");
+	    model.write(System.out, "TURTLE");
+	    System.out.println("\n---- RDF/XML ----");
+	    model.write(System.out, "RDF/XML");
+	    System.out.println("\n---- RDF/XML Abbreviated ----");
+	    model.write(System.out, "RDF/XML-ABBREV");
+	    System.out.println("\n---- N-Triples ----");
+	    model.write(System.out, "N-TRIPLES");
+	    System.out.println("\n---- RDF/JSON ----");
+	    model.write(System.out, "RDF/JSON");
+	
+	 /*
+	 LogCtl.setJavaLogging();
+
+	 DatasetGraph ds = DatasetFactory.createTxnMem();  
+	 FusekiEmbeddedServer server = FusekiEmbeddedServer.create()
+	     .add("/ds", ds)
+	     .build() ;
+	 server.start() ;
+			 */
+		        /* 
+	 String UPDATE_TEMPLATE = 
+	            "PREFIX dc: <http://purl.org/dc/elements/1.1/>"
+	            + "INSERT DATA"
+	            + "{ <http://test/%s>    dc:Dokument    \"Neues Pflichtenheft\" ;"
+	            + "                         dc:Autor  \"Max Mustermann\" ." + "}   ";
+	 
+	 
+	   		//Update Test
+ 	        try {
+ 	        	//  QueryExecution executionQuery = QueryExecutionFactory.sparqlService(
+ 	 	        //        "http://23.236.50.250:3030/ds/query", "SELECT * WHERE {?x ?r ?y}");
+ 	        	  
+ 	        	
+ 	        	 QueryExecution executionQuery = QueryExecutionFactory.sparqlService(
+ 	     	 	   "http://localhost:3030/ds/query", "SELECT * WHERE {?x ?r ?y}");
+ 	     	        	  
+ 	 	        ResultSet results = executionQuery.execSelect();
+ 	 	        ResultSetFormatter.out(System.out, results);
+ 	 	        executionQuery.close();
+				
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        
+	        // Printer
+ 
+	    	String id = UUID.randomUUID().toString();
+			System.out.println(String.format("Hinzugefügt", id));
+			UpdateProcessor updateQuery = UpdateExecutionFactory.createRemote(
+			       UpdateFactory.create(String.format(UPDATE_TEMPLATE, id)), 
+			        "http://23.236.50.250:3030/ds/update");
+			updateQuery.execute();*/
+	 
+        return "Methode insert:  sagt Jaaaaa!"; 
+        
+        
+ }
+ 
+ 
+ 
+ 
+ @GET
+ @Produces("text/plain")
+ @Path("/update") 
+ public String updateData() {
+	 
+	 // HIER: Methodenkörper
+
+	 
+        return "Methode update: sagt Jaaaaa";
+    }
+ 
+ 
+ @GET
+ @Produces("text/plain")
+ @Path("/getData") 
+ public String getData() {
+	 
+	 // HIER: Methodenkörper
+
+        return "Methode getData: sagt Jaaaaa";
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+ //////// n2h ////////
+ 
+ /*
+ @GET
+ @Produces("text/plain")
+ @Path("/getData") 
+ public String getDokumentByDriveID() {
+	 
+	 // HIER: Methodenkörper
+
+        return "Methode update: sagt Jaaaaa";
+    }
+ 
+ */
+
+ 
+ 
+}
