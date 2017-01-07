@@ -43,7 +43,7 @@ public class RestService {
  	         
  	        	
  	        	 QueryExecution executionQuery = QueryExecutionFactory.sparqlService(
- 	     	 	   "http://localhost:3030/ds/query", "SELECT * WHERE {?x ?r ?y}");
+ 	     	 	   "http://http://23.236.50.250:3030/ds/query", "SELECT * WHERE {?x ?r ?y}");
  	     	        	  
  	 	         ResultSet results = executionQuery.execSelect();
  	 	         ResultSetFormatter.out(System.out, results);
