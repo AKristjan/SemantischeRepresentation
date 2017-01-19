@@ -3,26 +3,31 @@ package com.hdm.semrep.rest.impl;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.InputStream;
 
+import org.apache.jena.fuseki.EmbeddedFusekiServer;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.ontology.OntModelSpec;
-import org.apache.jena.query.DatasetFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.sparql.core.DatasetGraph;
-import org.apache.jena.util.FileManager;
+
+import com.hp.hpl.jena.sparql.core.DatasetGraph;
+import com.hp.hpl.jena.sparql.core.DatasetGraphFactory;
 
 public class JenaService {
 	String fileName = "abox.owl";
 
  
-	public Model fileToModel(){
+	 public static EmbeddedFusekiServer mem(int port, String datasetPath) {
+	        DatasetGraph dsg = DatasetGraphFactory.createMem() ;
+	        return EmbeddedFusekiServer.create(port, dsg, datasetPath) ;
+	    }
+	
+	public static Model fileToModel(String path){
 
 		OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
 			
 			try {
-				File file = new File(fileName);
+				File file = new File(path);
 				FileReader reader;
 				reader = new FileReader(file);
 				model.read(reader,null);

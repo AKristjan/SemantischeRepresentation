@@ -11,7 +11,10 @@
   <!-- Configure java.util.logging -->
   <system-properties>
     <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    <property name="os.version" value="1.0.GAE whatever" />
+    <property name="os.arch" value="GAE whatever" />
   </system-properties>
+  
 
   <!--
     HTTP Sessions are disabled by default. To enable HTTP sessions specify:
@@ -27,5 +30,12 @@
     stale session data. For details, see
     http://code.google.com/appengine/docs/java/config/appconfig.html#Enabling_Sessions
   -->
+<!--   <sessions-enabled>true</sessions-enabled>
+  <async-session-persistence enabled="true" /> -->
+<!--   <class-loader-config>
+        <priority-specifier filename="luceneappengine-[LAE Version].jar"/>
+    </class-loader-config> -->
+    
+  
 
 </appengine-web-app>
