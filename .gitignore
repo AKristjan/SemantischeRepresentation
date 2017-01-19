@@ -1,0 +1,23 @@
+
+.plugins/org.eclipse.jdt.core/variablesAndContainers.dat (classpath variables)
+
+.plugins/org.eclipse.core.resources/.projects/*/.location (projects in the workspace) 
+
+*.lock
+
+*.gen
+
+*.index
+
+ 
+*.prefs
+
+*.fnm
+
+*.history
+
+*.cfs
+
+*.fdx
+
+Java/RestExample/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.18.jar
