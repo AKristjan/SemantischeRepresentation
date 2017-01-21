@@ -46,6 +46,7 @@ public class Szenario4_UpdateOWL {
 	 */
 	public static void main(String[] args) {
 		updateOWL();
+		selectDocumentsInOWL();
 	}
 
 	/**
@@ -124,6 +125,46 @@ public class Szenario4_UpdateOWL {
 
 	}
 
-	
+	/**
+	 * Die Methode <code> selectDocumentsnOWL()</code> gibt alle
+	 * Dokument-Instanzen aus der A-Box wieder, um die neu angelegten Instanzen
+	 * zu sehen.
+	 */
+	private static void selectDocumentsInOWL() {
+
+		// Auswahl von Dokumentname und URL
+		String sparql_select = "PREFIX foaf: <http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#>"
+				+ "	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+				+ " PREFIX mebase: <http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#>"
+				+ " SELECT ?Dokumentname ?URL "
+				+ " WHERE  { "
+				+ " ?x foaf:Dokumentname ?Dokumentname ."
+				+ " ?x foaf:URL ?URL ." + "	}";
+
+		try {
+			// Initialisierung und Ausführung einer SPARQL-Query
+			QueryExecution queryExecution = QueryExecutionFactory
+					.sparqlService("http://localhost:3030/ds/query",
+							sparql_select);
+
+			// ### Update Kommando auf Google Compute Engine/Fuseki-Server
+			// (Liveumgebung) ###
+			// QueryExecution executionQuery =
+			// QueryExecutionFactory.sparqlService("http://23.236.50.250:3030/ontostorage/query",
+			// sparql);
+
+			// Initialisierung von Resultset für Ergebniswerte der SPARQL-Query
+			ResultSet resultSet = queryExecution.execSelect();
+
+			// Ergebniswerte werden für Konsolendarstellung aufbereitet
+			ResultSetFormatter.out(System.out, resultSet);
+
+			queryExecution.close();
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
 
 }
