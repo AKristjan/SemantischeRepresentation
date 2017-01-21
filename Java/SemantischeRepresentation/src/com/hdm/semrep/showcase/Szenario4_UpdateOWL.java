@@ -56,7 +56,7 @@ public class Szenario4_UpdateOWL {
 	public static void updateOWL() {
 
 		// Initialisierung der Variablen
-		dokumentName = "timing";
+		dokumentName = "Aufgabenliste";
 		dokumentTyp = "PowerPoint-Präsentation (.pptx)";
 		dokument_hat_Autor = "Haruki_Murakami";
 		erstellugsDatum = "2017-01-21T15:08:00";
