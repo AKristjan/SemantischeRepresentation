@@ -16,9 +16,9 @@ public class Resource {
 	 
 	 String test = "";
 	 
-	 String sz1 = new Szenario1().getDocumentsByProjectName();
+	 //String sz1 = new Szenario1().getDocumentsByProjectName();
 	 	
-        return "Ausgabe-Links:" + "&nbsp;" + sz1;
+        return "Ausgabe-Links:";
     }
  
 

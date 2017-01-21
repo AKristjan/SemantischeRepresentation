@@ -66,6 +66,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Dokument_hat_Autor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Dokument_hat_Autor"/>
+    
+
+
     <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Dokumentname -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Dokumentname"/>
@@ -99,6 +105,12 @@
     <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_von_Unternehmen -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Mitarbeiter_von_Unternehmen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Nachname -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Nachname"/>
     
 
 
@@ -144,6 +156,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Vorname -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Vorname"/>
+    
+
+
     <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#gehoert_zu_Projekt -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#gehoert_zu_Projekt"/>
@@ -166,6 +184,30 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DocumentID">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Nachname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Nachname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Vorname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Vorname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor">
+        <rdfs:comment>Dieses Property beihaltet den Namen des Autors</rdfs:comment>
+    </rdf:Description>
     
 
 
@@ -624,6 +666,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Autor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Autor"/>
+    
+
+
     <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BadenWuerttemberg -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#BadenWuerttemberg">
@@ -743,6 +791,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami">
         <rdf:type rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Intern_Mitarbeiter"/>
+        <Vorname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haruki</Vorname>
     </owl:NamedIndividual>
     
 
@@ -811,14 +860,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Marketingkonzept">
         <AenderungsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-25T09:30:10</AenderungsDatum>
-        <Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
-        <Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Josh_Harumi"/>
-        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google Presentation</DokumentTyp>
+        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PowerPoint-Präsentation (.pptx)</DokumentTyp>
+        <Dokument_hat_Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
+        <Dokument_hat_Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Josh_Harumi"/>
         <Dokumentname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marketingkonzept</Dokumentname>
         <ErstellugsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-20T12:30:00</ErstellugsDatum>
         <URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://drive.google.com/open?id=1tTbGP2YiQxUef__4StLVbtzr_5NpAIMwRhAYeEnWJw8</URL>
         <Version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</Version>
-        <gehoert_zu_Projekt rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#HighNet"/>
+        <gehoert_zu_Projekt rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#GetOne"/>
     </owl:NamedIndividual>
     
 
@@ -851,8 +900,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Pflichtenheft">
         <AenderungsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-28T09:50:00</AenderungsDatum>
-        <Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hans_Beispiel"/>
-        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Word</DokumentTyp>
+        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Word-Dokument (.docx)</DokumentTyp>
+        <Dokument_hat_Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Hans_Beispiel"/>
+        <Dokument_hat_Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
         <Dokumentname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pflichtenheft</Dokumentname>
         <ErstellugsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-10-20T08:13:00</ErstellugsDatum>
         <URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/document/d/1lsy1JHKdjTsp0mGmnhN4LRTOBhDA3HiE47VaAE1dJ84/edit?usp=sharing</URL>
@@ -882,14 +932,13 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Projektplan">
         <AenderungsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-15T15:08:00</AenderungsDatum>
-        <Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
-        <Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Sigi_Sauerstoff"/>
-        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google Sheet</DokumentTyp>
+        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excel-Arbeitsmappe (.xlsx)</DokumentTyp>
+        <Dokument_hat_Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
         <Dokumentname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Projektplan</Dokumentname>
         <ErstellugsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-12T10:38:00</ErstellugsDatum>
         <URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/spreadsheets/d/1l2ssyCywYwqEDqvnAQmdryxLelQGNdlei-9wV2Rg2Ek/edit?usp=sharing</URL>
         <Version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</Version>
-        <gehoert_zu_Projekt rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#GetOne"/>
+        <gehoert_zu_Projekt rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#HighNet"/>
     </owl:NamedIndividual>
     
 
@@ -969,13 +1018,14 @@
     <!-- http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Testdokument1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Testdokument1">
-        <Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
-        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dokument</DokumentTyp>
+        <DokumentTyp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PowerPoint-Präsentation (.pptx)</DokumentTyp>
+        <Dokument_hat_Autor rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#Haruki_Murakami"/>
         <Dokumentname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testdokument1</Dokumentname>
         <ErstellugsDatum rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-11-12T07:55:00</ErstellugsDatum>
         <Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technische Realisierung</Status>
         <URL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/document/d/1fOFkCM6wb_Ux4za45iQLlsqbVfTlceO6eTMiZZwiy70</URL>
         <Version rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Version>
+        <gehoert_zu_Projekt rdf:resource="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#EcoLogics"/>
     </owl:NamedIndividual>
     
 
@@ -1014,9 +1064,6 @@
 
     <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/ab_cloud#DocumentID">
         <rdfs:comment>Eindeutige ID zur Identifikation eines Dokuments</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Autor">
-        <rdfs:comment>Dieses Property beihaltet den Namen des Autors</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/bjorn/ontologies/2016/11/tb_cloud#Dokument">
         <rdfs:comment>Diese Property-Gruppe aggegiert alle Properties für Dokumente.</rdfs:comment>
